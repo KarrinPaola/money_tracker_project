@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:money_tracker_project/Overview/myOverView.dart';
+import 'package:money_tracker_project/Login_SignUp/login_page.dart';
 
 class MyAppView extends StatelessWidget {
   const MyAppView({super.key});
@@ -11,7 +11,7 @@ class MyAppView extends StatelessWidget {
       title: "Expense Tracker",
       theme: ThemeData(
         colorScheme: const ColorScheme.light(
-          surface:  Color(0xFFFFFFF), // Màu nền chính
+          surface:  Color(0x0fffffff), // Màu nền chính
           onSurface: Color(0xFFedeff1), // Màu nền phụ
           primary:  Color(0xFF1e42f9), // Màu xanh dương chủ đạo cho các nút
           secondary:  Color(0xFF000000), // Màu đen cho chữ chính
@@ -19,7 +19,7 @@ class MyAppView extends StatelessWidget {
           outline: Color(0xFFedeff1), // Màu viền và các yếu tố phân cách
         ),
       ),
-      home: MyOverview(),
+      home: const LoginPage(),
     );
   }
 }

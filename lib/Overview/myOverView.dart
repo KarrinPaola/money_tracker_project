@@ -36,7 +36,7 @@ class _MyOverviewState extends State<MyOverview> {
       ),
       bottomNavigationBar: Container(
         padding:const EdgeInsets.only(bottom: 30, top: 20, right: 10, left: 10),
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Color(0xFFFFFFFF),
           border: Border(
             top: BorderSide(
@@ -53,8 +53,8 @@ class _MyOverviewState extends State<MyOverview> {
               icon: Icon(
                 Icons.home,
                 color: _selectedTab == 0
-                    ? Color(0xFF1e42f9)
-                    : Color(0xFF9ba1a8)
+                    ? const Color(0xFF1e42f9)
+                    : const Color(0xFF9ba1a8)
               ),
               iconSize: 30,
             ),
@@ -63,8 +63,8 @@ class _MyOverviewState extends State<MyOverview> {
               icon: Icon(
                 Icons.savings,
                 color: _selectedTab == 1
-                    ? Color(0xFF1e42f9)
-                    : Color(0xFF9ba1a8)
+                    ? const Color(0xFF1e42f9)
+                    : const Color(0xFF9ba1a8)
               ),
               iconSize: 30,
             ),
@@ -76,8 +76,8 @@ class _MyOverviewState extends State<MyOverview> {
               icon: Icon(
                 Icons.notification_important,
                 color: _selectedTab == 2
-                    ? Color(0xFF1e42f9)
-                    : Color(0xFF9ba1a8)
+                    ? const Color(0xFF1e42f9)
+                    : const Color(0xFF9ba1a8)
               ),
               iconSize: 30,
             ),
@@ -86,8 +86,8 @@ class _MyOverviewState extends State<MyOverview> {
               icon: Icon(
                 Icons.settings,
                 color: _selectedTab == 3
-                    ? Color(0xFF1e42f9)
-                    : Color(0xFF9ba1a8)
+                    ? const Color(0xFF1e42f9)
+                    : const Color(0xFF9ba1a8)
               ),
               iconSize: 30,
             ),
@@ -99,7 +99,7 @@ class _MyOverviewState extends State<MyOverview> {
         height: 80,
         child: FloatingActionButton(
           onPressed: () {},
-          backgroundColor: Color(0xFF1e42f9),
+          backgroundColor: const Color(0xFF1e42f9),
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
           child: const Icon(

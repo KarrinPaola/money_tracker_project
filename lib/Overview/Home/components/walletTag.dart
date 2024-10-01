@@ -43,7 +43,7 @@ class _WalletTagState extends State<WalletTag> {
         padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(
           color:
-              isSelected ? Color(0xFF1e42f9) : Color(0xFFFFFFFF), // Đổi màu nền
+              isSelected ? const Color(0xFF1e42f9) : const Color(0xFFFFFFFF), // Đổi màu nền
           borderRadius: BorderRadius.circular(20),
           boxShadow: [
             BoxShadow(
@@ -70,7 +70,7 @@ class _WalletTagState extends State<WalletTag> {
                 fontSize: 13,
               ),
             ),
-            SizedBox(height: 30),
+            const SizedBox(height: 30),
             Text(
               '\$${widget.money}',
               style: TextStyle(
